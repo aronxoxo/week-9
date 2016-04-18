@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS Imports -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/leaflet.css" />
@@ -10,49 +10,71 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Sidebar -->
-    <div class="sidebar">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Manufacturers</a>
-          </div>
-          <ul class="nav navbar-nav navbar-right">
-          <!-- ... -->
-          </ul>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"><br><br><br><br>
+            <div class="list-group">
+              <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-pushpin"></span>&nbsp;Manufacturers</a>
+              <a href="#" class="list-group-item"><span class="glyphicon glyphicon-tags"></span>&nbsp;Purchases</a>
+              <a href="#" class="list-group-item"><span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp;Bascket Secrets</a>
+            </div>
         </div>
-      </nav>
-      <div class="item">
-        <h2 class="item-heading">Tandy’s Basketweavers</h2>
-        <div>490 Freedom Drive<br>
-        Philadelphia, PA 19425</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Basket Case</h2>
-        <div>400 S 46th Street<br>
-        Philadelphia, PA 19144</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
-        <div>2558 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Bask in the Glory</h2>
-        <div>2501 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="item">
-        <h2 class="item-heading">Basket Ball</h2>
-        <div>2542 Walnut Street<br>
-        Philadelphia, PA 19107</div>
-      </div>
-      <div class="sort">
-        Sort by <span class="sort-option selected">A–Z</span> <span class="sort-option">Inventory</span>
+        <div class="col-md-3">
+          <nav class="navbar navbar-default">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Manufacturers</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <div class="dropdown">
+                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Add New
+                  <span class="caret"></span></button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">View History</a></li>
+                    <li><a href="#">Email All Manufacturers</a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+          </nav>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search ...">
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+          </div><br>
+          <div class="item">
+            <h2 class="item-heading">Tandy’s Basketweavers</h2>
+            <div>490 Freedom Drive<br>
+            Philadelphia, PA 19425</div><br>
+            <button type="button" class="btn btn-danger">Low Inventory</button>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Basket Case</h2>
+            <div>400 S 46th Street<br>
+            Philadelphia, PA 19144</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Bas-kids: Baskets 4 Kids</h2>
+            <div>2558 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Bask in the Glory</h2>
+            <div>2501 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+          <div class="item">
+            <h2 class="item-heading">Basket Ball</h2>
+            <div>2542 Walnut Street<br>
+            Philadelphia, PA 19107</div>
+          </div>
+        </div>
+        <div class="col-md-7" id="map">this is a map</div>
       </div>
     </div>
-    <!-- Map -->
-    <div id="map" class="map"></div>
     <!-- Javascript Imports -->
     <script src="js/jquery-2.2.0.js"></script>
     <script src="js/leaflet.js"></script>

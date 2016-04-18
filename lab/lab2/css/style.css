@@ -68,3 +68,20 @@ body {
     font-size: 14px;
     font-weight: bold;
 }
+
+.row{
+  height: 1080px;
+}
+
+.col-md-2{
+  background-color: #273440;
+  height: 100%;
+}
+
+.col-md-3{
+  height: 100%;
+}
+
+.col-md-7{
+  height: 100%;
+}
